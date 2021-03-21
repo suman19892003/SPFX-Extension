@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ClientSideComponentInstance
+        Title="Spfxmegamenu"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ComponentId="899b6b73-2bdb-4a80-9c9c-776f208e4cbf"
+        Properties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </ClientSideComponentInstance>
+</Elements>

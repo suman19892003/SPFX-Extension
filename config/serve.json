@@ -1,0 +1,29 @@
+  {
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://amicustechnologydev.sharepoint.com/sites/SumanTest/SitePages/Home.aspx",
+      "customActions": {
+        "899b6b73-2bdb-4a80-9c9c-776f208e4cbf": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    },
+    "spfxmegamenu": {
+      "pageUrl": "https://amicustechnologydev.sharepoint.com/sites/SumanTest/SitePages/Home.aspx",
+      "customActions": {
+        "899b6b73-2bdb-4a80-9c9c-776f208e4cbf": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}

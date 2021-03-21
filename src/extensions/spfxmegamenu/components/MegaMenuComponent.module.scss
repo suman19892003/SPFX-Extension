@@ -1,0 +1,203 @@
+$themePrimary: '[theme:themePrimary, default:#004578]';
+$themeWhite: '[theme:white, default:white]';
+
+//https://sharepoint.handsontek.net/2021/01/24/hide-navigation-header-modern-sharepoint-pages/
+//For Playing with Header
+
+.menuButton {
+  width: 208px;
+}
+
+.topPanel {
+  color: $themePrimary;
+  background-color: gainsboro !important;
+  //color: red !important;
+  //background-color: black !important;
+  text-align: center;
+  
+}
+
+// .ms-Panel-commands{
+//   display: none !important;
+// }
+
+// .ms-Panel-header{
+//   display: none !important;
+// }
+
+.panelwidth{
+  width:60vw !important; //added by suman
+  background-color: gainsboro !important;
+
+  margin-left: 410px;
+  margin-top: 128px;
+  height: 50vh;
+}
+
+.categoryItem {
+  font-size: 15px;
+  background-color: $themePrimary;
+  color: $themeWhite;
+  padding: 5px;
+  margin: 5px 0px;
+}
+
+.menuItem {
+  font-size: 12px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+#spSiteHeader, #pageHeader{
+  display: none;
+}
+// SIMPLE GRID - SASS/SCSS
+
+//Code Start Suman
+
+.topnav {  
+  overflow: hidden;  
+  background-color: black;  
+}
+.topnav a {  
+  float: left;  
+  color: #f2f2f2;  
+  text-align: center;  
+  padding: 9px 15px; 
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 18px;  
+  text-decoration: none !important;
+}
+.topnav a:hover {
+    background-color: #ddd;  
+    color: black;  
+}
+.topnav a.active {  
+    background-color: #4CAF50;  
+    color: white;  
+}
+
+.link{
+  text-decoration: none !important;
+  color: white !important; 
+}
+
+// .topHeader{
+//   height: 70px !important;
+//   margin: 10px 5px;
+// }
+.imgsitelogo{
+  height: 85%;
+  padding: 5px;
+}
+.topContainer{
+  display: flex;
+  height: 75px;
+  background-color: black;
+}
+
+.headerText{
+  display: grid;
+}
+.siteName{
+  color: white;
+  font-size:22px;
+  font-weight:600;
+  padding-top:5px;
+  padding-left:18px;
+  //padding-bottom:5px;
+  text-transform:uppercase;
+}
+
+//Code End Suman
+
+// grid
+
+$width: 96%;//96% suman
+$gutter: 4%;//4% suman
+$breakpoint-small: 33.75em; // 540px
+$breakpoint-med: 45em; // 720px
+$breakpoint-large: 60em; // 960px
+
+.grid {
+  width: 100%; //90%; suman
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white !important;
+
+  @media only screen and (min-width: $breakpoint-small) {
+    width: 100%; //95%; suman
+  }
+
+  @media only screen and (min-width: $breakpoint-large) {
+    width: 100%; //75%; suman
+    //max-width: 60rem;
+  }
+}
+
+.row {
+  position: relative;
+  width: 100%;//100% suman
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col1,
+.col2,
+.col3,
+.col4,
+.col5,
+.col6,
+.col7,
+.col8,
+.col9,
+.col10,
+.col11,
+.col12 {
+  width: $width;
+}
+
+.col1sm { width:($width / 12) - ($gutter * 11 / 12); }
+.col2sm { width: ($width / 6) - ($gutter * 10 / 12); }
+.col3sm { width: ($width / 4) - ($gutter * 9 / 12); }
+.col4sm { width: ($width / 3) - ($gutter * 8 / 12); }
+.col5sm { width: ($width / (12 / 5)) - ($gutter * 7 / 12); }
+.col6sm { width: ($width / 2) - ($gutter * 6 / 12); }
+.col7sm { width: ($width / (12 / 7)) - ($gutter * 5 / 12); }
+.col8sm { width: ($width / (12 / 8)) - ($gutter * 4 / 12); }
+.col9sm { width: ($width / (12 / 9)) - ($gutter * 3 / 12); }
+.col10sm { width: ($width / (12 / 10)) - ($gutter * 2 / 12); }
+.col11sm { width: ($width / (12 / 11)) - ($gutter * 1 / 12); }
+.col12sm { width: $width; }
+
+@media only screen and (min-width: $breakpoint-med) {
+  .col1 { width:($width / 12) - ($gutter * 11 / 12); }
+  .col2 { width: ($width / 6) - ($gutter * 10 / 12); }
+  .col3 { width: ($width / 4) - ($gutter * 9 / 12); }
+  .col4 { width: ($width / 3) - ($gutter * 8 / 12); }
+  .col5 { width: ($width / (12 / 5)) - ($gutter * 7 / 12); }
+  .col6 { width: ($width / 2) - ($gutter * 6 / 12); }
+  .col7 { width: ($width / (12 / 7)) - ($gutter * 5 / 12); }
+  .col8 { width: ($width / (12 / 8)) - ($gutter * 4 / 12); }
+  .col9 { width: ($width / (12 / 9)) - ($gutter * 3 / 12); }
+  .col10 { width: ($width / (12 / 10)) - ($gutter * 2 / 12); }
+  .col11 { width: ($width / (12 / 11)) - ($gutter * 1 / 12); }
+  .col12 { width: $width; }
+
+  .hiddensm {
+    display: block;
+  }
+}
